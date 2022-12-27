@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(141, 57, 57); */
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    width: 85%;
+    min-height: 100vh;
+    background-color: aliceblue;
+    margin: 10rem auto;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-shadow: 1rem 1rem 5rem rgba(0,0,10, 0.5);
+}
+
+.container h1{
+    background-color:aliceblue;
+    padding:2rem;
+    border-radius: 2rem;
+   display: grid;
+   place-items: center;
+   font-size: 3rem;
+}
+
+.box{
+    position: relative;
+    /* width: rem; */
+    padding: 1rem;
+    height: 5rem;
+    border-radius: 4rem;
+    /* background-color: aliceblue; */
+    background-color: antiquewhite;
+}
+#noOfWords{
+    position: absolute;
+    /* margin-left: 1rem; */
+    background-color:antiquewhite;
+    font-size: 2rem;
+    color:black;
+    padding: .5rem;
+    padding-left: 2rem;
+    width: 70%;
+    height: 5rem;
+    border-radius: 4rem;
+    /* border:dashed; */
+    border: none;
+    top: 0rem;
+    left: 0;
+    border-color: antiquewhite;
+    /* border-color:rgb(15, 86, 62); */
+    /* box-shadow: 0rem 0rem 5rem rgba(104, 104, 221, 0.5); */
+
+}
+
+button{
+    position:absolute;
+    top:0.7rem;
+    right: 1rem;
+    background-color:aliceblue;
+    border: none;
+    width:23%;
+    padding: 0.7rem;
+    border-radius: 2.5rem;
+    box-shadow: 0rem 0rem 0.5rem rgba(230, 94, 94, 0.5);
+    /* margin-left: 5rem; */
+    cursor: pointer;
+    /* margin-top: 1rem; */
+    transition: background-color 0.5s;
+    font-size: 1.8rem;
+}
+
+button:hover{
+    background-color:bisque;
+}
+
+.para{
+    font-size: 1.8rem;
+    margin: 2rem;
+    padding: 2rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.7rem;
+    line-height: 3rem;
+    background-color: antiquewhite;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 2rem rgba(144, 144, 218, 0.5);
+}
+
+/* media querie */
+
+@media screen  and (max-width:560px) {
+
+    button{
+        font-size: 1rem;
+        top: 1rem;
+    }
+
+    #noOfWords{
+     font-size: 2rem;
+    }
+}
+
+@media screen  and (max-width:330px) {
+    #noOfWords{
+     font-size: 1.5rem;
+    }
+
+    /* .container h1{
+        font-size: 2rem;
+    } */
+}
